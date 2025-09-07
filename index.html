@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Playground</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="js" href="script.js" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Mobotech’s Interactive Web Lab 🚀</h1>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <section class="counter-section">
+    <h2>🎯 Button Counter Game</h2>
+    <p>Score: <span id="score">0</span></p>
+    <button id="scoreBtn">Click Me!</button>
+  </section>
+
+  <section class="faq-section">
+    <h2>❓ FAQ</h2>
+    <div class="faq-item">
+      <h3 class="question">What is Mobotech?</h3>
+      <p class="answer hidden">Mobotech is a tech academy and agency offering hands-on education and creative digital experiences.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="question">How do I enroll?</h3>
+      <p class="answer hidden">Just fill out the form below and we’ll get in touch!</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>📋 Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label>Name: <input type="text" id="name" /></label>
+      <span class="error" id="nameError"></span>
+
+      <label>Email: <input type="email" id="email" /></label>
+      <span class="error" id="emailError"></span>
+
+      <label>Password: <input type="password" id="password" /></label>
+      <span class="error" id="passwordError"></span>
+
+      <label>Confirm Password: <input type="password" id="confirmPassword" /></label>
+      <span class="error" id="confirmError"></span>
+
+      <button type="submit">Submit</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
